@@ -1,9 +1,382 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
-	<head>
-	<title>李军首页</title>
-	</head>
-	<body>
-	<h1>测试页</h1>
-	</body>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-control" content="no-cache">
+    <meta http-equiv="Cache" content="no-cache">
+    <title>贵茶高端定制茶</title>
+    <link rel="stylesheet" href="https://res.guitea.com/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://res.guitea.com/libs/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link href="src/css/guitea.bootstrap.main.css" rel="stylesheet" />
+    <style type="text/css">
+        body {
+            background-color: #000000 !important;
+        }
+
+        .gcs-bg {
+            display: block;
+            width: 100%;
+            background-size: contain;
+            background-repeat: repeat;
+            background-image: url(https://doc.guitea.com/gcoa/imgs/gcs/temp/bg_body.png);
+        }
+
+        .gcs-header-container {
+            background-color: #d1c0a5;
+        }
+
+        .gcs-header {
+            padding: 12px;
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .gcs-prdtcode {
+			margin:auto;
+            text-align: center;
+            width: 100%;
+			max-width:420px;
+            height: 45px;
+            background-size: 80% 45px;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-image: url(https://doc.guitea.com/gcoa/imgs/gcs/temp/bg_btn.png);
+        }
+
+        #prdt_code {
+            display: inline-block;
+            margin-top: 6px;
+            font-size: 20px;
+            font-weight: bold;
+            vertical-align: middle;
+            text-align: center;
+        }
+
+        .gcs-line {
+            padding: 0;
+            margin: 0;
+            border-bottom: #d1c0a6 solid 1px;
+        }
+
+        .gcs-line-top {
+            margin-bottom: -1px;
+            width: 80px;
+            border-bottom: #d1c0a6 solid 3px;
+        }
+
+        .gcs-line-bottom {
+            margin-top: -1px;
+            display: inline-block;
+            width: 80px;
+            border-top: #d1c0a6 solid 3px;
+        }
+
+        .gcs-txt-title {
+            text-align: center;
+            padding: 5px 15px;
+            background-color: #d1c0a5;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .gcs-txt-title-en {
+            text-align: center;
+            color: #d1c0a5;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .table td {
+            color: #d1c0a5 !important;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .carousel-caption {
+            right: 5%;
+        }
+    </style>
+</head>
+<body>
+    <div class="guitea-body">
+        <div class="gcs-bg">
+            <div class="container gcs-header-container">
+                <div class="gcs-header">
+                    贵茶高尔夫小叶古树红茶
+                </div>
+            </div>
+
+            <div class="container guitea-container">
+                <div id="carousel_top_ads" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel_top_ads" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel_top_ads" data-slide-to="1"></li>
+                        <li data-target="#carousel_top_ads" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="https://doc.guitea.com/gcoa/imgs/gcs/temp/gcs_header-carousel-img.jpg">
+                            <div class="carousel-caption">
+                                <h5 class="text-right">一盏古树茶，历久弥新</h5>
+                                <h5 class="text-right">赋予追求极致口感的你</h5>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="https://doc.guitea.com/gcoa/imgs/gcs/temp/gcs_header-carousel-img.jpg">
+                            <div class="carousel-caption">
+                                <h5 class="text-right">一盏古树茶，历久弥新</h5>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="https://doc.guitea.com/gcoa/imgs/gcs/temp/gcs_header-carousel-img.jpg">
+                            <div class="carousel-caption">
+                                <h5 class="text-right">赋予追求极致口感的你</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container" style="padding:50px;">
+                <div class="gcs-prdtcode">
+                    <span id="prdt_code"></span>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="d-flex justify-content-center">
+                    <div class="gcs-line-top"></div>
+                </div>
+                <div class="gcs-line"></div>
+                <div class="d-flex justify-content-center">
+                    <div class="gcs-line-bottom"></div>
+                </div>
+            </div>
+
+            <div class="container" style="padding-top:30px;padding-bottom:5px;">
+                <div>
+                    <span class="gcs-txt-title">基本信息</span>
+                </div>
+                <div style="padding-top:5px;">
+                    <span class="gcs-txt-title-en">
+                        ESSENTIAL INFORMATION
+                    </span>
+                </div>
+
+                <table class="table table-sm table-borderless mt-2">
+                    <tbody>
+                        <tr>
+                            <td class="text-right font-weight-bold" style="min-width:90px">
+                                茶树类别：
+                            </td>
+                            <td class="text-left">
+                                灌木型
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-right font-weight-bold">
+                                茶树名称：
+                            </td>
+                            <td class="text-left">
+                                古茶树
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-right font-weight-bold">
+                                采摘时间：
+                            </td>
+                            <td id="caizhai_time" class="text-left"></td>
+                        </tr>
+                        <tr>
+                            <td class="text-right font-weight-bold">
+                                茶园位置：
+                            </td>
+                            <td class="text-left">
+                                贵州省·贵阳市·花溪区·久安乡
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-right font-weight-bold">
+                                茶园海拔：
+                            </td>
+                            <td class="text-left">
+                                1090 - 1402米之间
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-right font-weight-bold">
+                                茶园气候：
+                            </td>
+                            <td class="text-left">
+                                年降雨量1000 - 1100mm<br />平均气温13.6℃
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-right font-weight-bold">
+                                茶园土壤：
+                            </td>
+                            <td class="text-left">
+                                硅铝黄壤
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-right font-weight-bold">
+                                茶园防虫：
+                            </td>
+                            <td class="text-left">
+                                灭虫灯 自然免疫
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-right font-weight-bold">
+                                茶园除草：
+                            </td>
+                            <td class="text-left">
+                                自然生长 无需除草
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-right font-weight-bold">
+                                水源供给：
+                            </td>
+                            <td class="text-left">
+                                自然雨水
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="tree_imgs_container">
+                <div class="container">
+                    <div id="carousel_0311" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100" src="https://doc.guitea.com/gcoa/imgs/gcs/temp/0311A.jpg">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="https://doc.guitea.com/gcoa/imgs/gcs/temp/0311B.jpg">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carousel_0311" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carousel_0311" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                    <table class="table table-sm table-borderless mt-1">
+                        <tbody>
+                            <tr>
+                                <td>茶树编号：0311</td>
+                                <td>树龄：大于900年</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="container">
+                    <div id="carousel_0597" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100" src="https://doc.guitea.com/gcoa/imgs/gcs/temp/0597A.jpg">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="https://doc.guitea.com/gcoa/imgs/gcs/temp/0597B.jpg">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carousel_0597" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carousel_0597" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                    <table class="table table-sm table-borderless mt-1">
+                        <tbody>
+                            <tr>
+                                <td>茶树编号：0597</td>
+                                <td>树龄：大于200年</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="container">
+                    <div id="carousel_1140" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100" src="https://doc.guitea.com/gcoa/imgs/gcs/temp/1140A.jpg">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="https://doc.guitea.com/gcoa/imgs/gcs/temp/1140B.jpg">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carousel_1140" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carousel_1140" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                    <table class="table table-sm table-borderless mt-1">
+                        <tbody>
+                            <tr>
+                                <td>茶树编号：1140</td>
+                                <td>树龄：大于300年</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+				
+            </div>
+            <div class="container" style="padding-top:10px;padding-bottom:10px;">
+                <div class="d-flex justify-content-center">
+                    <div class="gcs-line-top"></div>
+                </div>
+                <div class="gcs-line"></div>
+                <div class="d-flex justify-content-center">
+                    <div class="gcs-line-bottom"></div>
+                </div>
+            </div>
+
+            <div class="container" style="padding-top:30px;padding-bottom:5px;">
+                <div>
+                    <span class="gcs-txt-title">产品介绍</span>
+                </div>
+                <div style="padding-top:5px;">
+                    <span class="gcs-txt-title-en">
+                        PRODUCT INTRODUCTION
+                    </span>
+                </div>
+            </div>
+            <div class="container" style="padding-top:5px;padding-bottom:50px;">
+                <img class="img-fluid" src="https://doc.guitea.com/gcoa/imgs/gcs/temp/prdt_video.jpg" style="width:100%" />
+            </div>
+
+            <div id="__guitealoading">
+                <div class="guitea-loading">加载中...</div>
+                <div class="guitea-loading-backdrop"></div>
+            </div>
+        </div>
+    </div>
+    <script src="https://res.guitea.com/libs/jquery/jquery-3.3.1.min.js"></script>
+    <script src="https://res.guitea.com/libs/json/json2.js"></script>
+    <script src="https://res.guitea.com/libs/bootstrap/4.3.1/js/bootstrap.bundle.js"></script>
+    <script src="src/js/common/emer.common.js"></script>
+    <script src="src/js/common/guitea.bootstrap.common.js?v=1.0.2"></script>
+    <script src="src/js/wsw.bootstrap/4.3.1/jquery.datagrid.js"></script>
+    <script src="src/js/gcs/gcs_product.js?v=1.0.5"></script>
+</body>
 </html>

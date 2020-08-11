@@ -1,0 +1,721 @@
+﻿/*==================================
+ * guitea.bootstrap.main.css
+ * add by wangshw 2019-04-16
+ *==================================*/
+html, body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.guitea-body {
+    overflow: auto;
+}
+
+.font-9 {
+    font-size: .5625rem !important;
+}
+
+.font-10 {
+    font-size: .625rem !important;
+}
+
+.font-12 {
+    font-size: .75rem !important;
+}
+
+.font-14 {
+    font-size: .875rem !important;
+}
+
+/*
+ * bootstrap-fix
+ *==========================*/
+.modal-header {
+    padding: .5rem;
+}
+
+.modal-footer {
+    padding: .5rem;
+}
+/*
+ * guitea-fix
+ *==========================*/
+.guitea-mb-1 {
+    margin-bottom: .1875rem !important;
+}
+
+.guitea-hidden,
+.emer-hidden {
+    display: none;
+}
+
+.guitea-loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    height: 56px;
+    line-height: 56px;
+    margin-left: -100px;
+    margin-top: -40px;
+    color: #fff;
+    padding-left: 60px;
+    padding-right: 10px;
+    font-size: 1rem;
+    background: #000 url(//res.guitea.com/imgs/common/loading_1.gif) no-repeat 10px 50%;
+    opacity: 0.6;
+    z-index: 9999;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=70);
+}
+
+.guitea-loading-backdrop {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 9990;
+    width: 100%;
+    height: calc(100%);
+    background: #000;
+    opacity: 0.5;
+    filter: alpha(opacity=60);
+}
+
+.guitea-container {
+    margin: auto;
+    padding: 0;
+}
+
+#guitea_header .nav-link {
+    padding: .25rem .75rem;
+    font-size: 1.125rem;
+}
+
+.guitea-header-title {
+    width: 180px;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+    .guitea-header-title .iconfont {
+        font-size: 1.25rem !important;
+    }
+
+.guitea-header-navbar {
+    padding: 0.25rem;
+}
+
+    .guitea-header-navbar .navbar-logo {
+        float: left;
+        width: 7.048rem;
+        height: 2.5rem;
+        text-indent: -9999em;
+        background-size: 7.048rem 2.5rem;
+        background-repeat: no-repeat;
+        background-position: left center;
+        background-image: url(//res.guitea.com/imgs/logo/guitea-logo.png?v=1.0.0);
+        margin-right: 0;
+    }
+
+.guitea-content {
+    margin-top: 49px;
+    overflow: auto;
+}
+
+.guite-created {
+    color: #6c757d;
+}
+
+/*
+ * bootstrap-card
+ *==============================================*/
+.card-header-none {
+    margin: 0;
+    border-width: 0;
+}
+
+.card-striped .list-group-item:nth-child(even) {
+    background-color: #fefefe;
+    /*color: #6c757d;*/
+}
+
+.card-striped .list-group-item {
+    padding-top: .5rem !important;
+    padding-bottom: .5rem !important;
+}
+
+.card-striped-edit .list-group-item {
+    border-top-color: #007bff;
+    border-top-width: 2px;
+}
+/*
+ * bootstrap-datagrid
+ *==============================================*/
+.bootstrap-datagrid {
+}
+
+    .bootstrap-datagrid .card {
+        margin: 0;
+        padding: 0;
+    }
+
+    .bootstrap-datagrid .datagrid-header {
+        padding: .3125rem .75rem;
+    }
+
+        .bootstrap-datagrid .datagrid-header .nav {
+            margin-right: -.425rem;
+        }
+
+            .bootstrap-datagrid .datagrid-header .nav .nav-item {
+                display: inherit;
+            }
+
+        .bootstrap-datagrid .datagrid-header .header-tools-btn {
+            margin-left: .125rem;
+            padding: .125rem .3125rem;
+            font-size: .75rem;
+        }
+
+    .bootstrap-datagrid .datagrid-body {
+        overflow: auto;
+    }
+
+        .bootstrap-datagrid .datagrid-body .datagrid-row {
+            padding: .3125rem .5rem;
+            font-size: .75rem;
+        }
+
+            .bootstrap-datagrid .datagrid-body .datagrid-row .row-title {
+                font-size: .875rem;
+            }
+
+    .bootstrap-datagrid .card-footer {
+        padding: .5rem;
+        font-size: .875rem;
+    }
+
+    .bootstrap-datagrid .modal {
+    }
+
+    .bootstrap-datagrid .modal-dialog {
+        /*注：固定高度，防止高度变化造成input blur 与 footer上的button click事件冲突*/
+        height: calc(100% - 1rem);
+    }
+
+    .bootstrap-datagrid .modal-title {
+        font-size: 1rem;
+    }
+
+    .bootstrap-datagrid .modal-body {
+        margin: 0;
+        padding: 0;
+    }
+
+        .bootstrap-datagrid .modal-body .list-group-item {
+            padding: .3125rem;
+            margin-top: -1px;
+            margin-bottom: -1px;
+        }
+
+/*
+ * bootstrap-searchPop
+ *==============================================*/
+.bootstrap-searchPop {
+}
+
+    .bootstrap-searchPop .modal-body {
+        padding: .25rem;
+    }
+
+    .bootstrap-searchPop .alert {
+        padding: .75rem;
+        margin-bottom: .5rem;
+    }
+
+        .bootstrap-searchPop .alert .andOr {
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+
+    .bootstrap-searchPop .alert-light {
+        border-color: #ced4da;
+    }
+
+    .bootstrap-searchPop .alert-dismissible {
+        padding-right: 2rem;
+    }
+
+        .bootstrap-searchPop .alert-dismissible .close {
+            padding: .25rem;
+        }
+
+/*
+ * bootstrap-textbox
+ *==============================================*/
+.bootstrap-textbox {
+    margin: 0;
+}
+
+    .bootstrap-textbox label {
+        font-size: .75rem;
+        font-weight: bold;
+        margin-bottom: .25rem;
+    }
+
+    .bootstrap-textbox .view-label {
+        font-size: .75rem;
+    }
+
+    .bootstrap-textbox small {
+        font-size: .625rem;
+    }
+
+    .bootstrap-textbox .invalid-feedback {
+        font-size: .75rem;
+    }
+
+/*
+ * bootstrap-textwindow
+ *==============================================*/
+.bootstrap-textwindow {
+}
+
+    .bootstrap-textwindow .form-control[readonly] {
+        background-color: #fff;
+    }
+
+/*
+ * bootstrap-numberbox
+ *==============================================*/
+.bootstrap-numberbox {
+}
+
+/*
+ * bootstrap-datebox
+ *==============================================*/
+.bootstrap-datebox {
+}
+
+    .bootstrap-datebox .form-control[readonly] {
+        background-color: #fff;
+    }
+
+.bootstrap-datebox-modal .datetimepicker {
+    position: static;
+    margin: auto !important;
+    width: 100%;
+    max-width: 600px;
+}
+
+.bootstrap-datebox-modal .modal-body {
+    margin: 0;
+    padding: 0;
+}
+
+.bootstrap-datebox-modal .modal-footer {
+    border-top-width: 0;
+}
+
+.bootstrap-datebox-modal .datetimepicker table {
+    width: 100% !important;
+}
+
+.bootstrap-datebox-modal [class*=" datetimepicker-dropdown"]::before {
+    content: none;
+    display: none;
+}
+
+.bootstrap-datebox-modal [class*=" datetimepicker-dropdown"]::after {
+    content: none;
+    display: none;
+}
+
+/*
+ * bootstrap-combobox
+ *==============================================*/
+.bootstrap-combobox {
+}
+
+/*
+ * bootstrap-checkbox
+ *==============================================*/
+.bootstrap-checkbox {
+    padding: .5rem .25rem .25rem;
+}
+
+    .bootstrap-checkbox .custom-control-label {
+        vertical-align: middle;
+    }
+
+        .bootstrap-checkbox .custom-control-label::after {
+            top: .0625rem;
+        }
+
+        .bootstrap-checkbox .custom-control-label::before {
+            top: .0625rem;
+        }
+
+/*
+ * bootstrap-switchbutton
+ *==============================================*/
+.bootstrap-switchbutton {
+}
+
+    .bootstrap-switchbutton .custom-control-label {
+        vertical-align: middle;
+    }
+
+        .bootstrap-switchbutton .custom-control-label::before {
+            top: .0625rem;
+        }
+
+        .bootstrap-switchbutton .custom-control-label::after {
+            top: .1625rem;
+        }
+/*
+ * bootstrap-tagbox
+ *==============================================*/
+.bootstrap-tagbox {
+}
+
+    .bootstrap-tagbox .tagbox-container {
+        padding: 0;
+        background-color: #fff;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+        .bootstrap-tagbox .tagbox-container .alert {
+            margin: .125rem;
+            padding: .125rem;
+            font-size: .875rem;
+        }
+
+        .bootstrap-tagbox .tagbox-container .close {
+            padding: .25rem .375rem;
+            line-height: .6;
+        }
+
+    .bootstrap-tagbox .input-group-append .btn,
+    .bootstrap-tagbox .input-group-append .input-group-text {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+
+/*
+ * bootstrap-openlist
+ *==============================================*/
+.bootstrap-openlist {
+}
+
+    .bootstrap-openlist .modal-header .header-tools-btn {
+        margin-left: .125rem;
+        padding: .125rem .3125rem;
+        font-size: .875rem;
+    }
+
+    .bootstrap-openlist .modal-title {
+        font-size: 1rem;
+    }
+
+    .bootstrap-openlist .modal-body {
+        margin: 0;
+        padding: 0;
+    }
+
+        .bootstrap-openlist .modal-body .search-bar {
+            padding: .0625rem;
+        }
+
+            .bootstrap-openlist .modal-body .search-bar .btn {
+                font-size: .75rem;
+                border-color: #ced4da;
+            }
+
+    .bootstrap-openlist .list-group {
+        overflow: auto;
+    }
+
+        .bootstrap-openlist .list-group .openlist-row {
+            padding: .3125rem .5rem;
+            font-size: .75rem;
+        }
+
+    .bootstrap-openlist .modal-footer {
+        display: block;
+    }
+
+/*
+ * bootstrap-opentree
+ *==============================================*/
+.bootstrap-opentree {
+}
+
+    .bootstrap-opentree .modal-header .header-tools-btn {
+        margin-left: .125rem;
+        padding: .125rem .3125rem;
+        font-size: .875rem;
+    }
+
+    .bootstrap-opentree .modal-title {
+        font-size: 1rem;
+    }
+
+    .bootstrap-opentree .modal-body {
+        margin: 0;
+        padding: 0;
+    }
+
+        .bootstrap-opentree .modal-body .breadcrumb {
+            border-radius: 0;
+            margin-bottom: 0;
+            padding: .3125rem .5rem;
+            font-size: .75rem;
+        }
+
+        .bootstrap-opentree .modal-body .search-bar {
+            padding: .0625rem;
+        }
+
+            .bootstrap-opentree .modal-body .search-bar .btn {
+                font-size: .75rem;
+                border-color: #ced4da;
+            }
+
+    .bootstrap-opentree .list-group {
+        overflow: auto;
+    }
+
+        .bootstrap-opentree .list-group .opentree-row {
+            padding: .3125rem .5rem;
+            font-size: .75rem;
+        }
+
+            .bootstrap-opentree .list-group .opentree-row .btn-node {
+                border-color: #ced4da;
+                border-width: 0;
+            }
+
+    .bootstrap-opentree .modal-footer {
+        display: block;
+    }
+
+/*
+ * bootstrap-attachment
+ *==============================================*/
+.bootstrap-attachment {
+}
+
+    .bootstrap-attachment .modal-header .header-tools-btn {
+        margin-left: .125rem;
+        padding: .125rem .3125rem;
+        font-size: .875rem;
+    }
+
+    .bootstrap-attachment .modal-title {
+        font-size: 1rem;
+    }
+
+    .bootstrap-attachment .modal-body {
+        margin: 0;
+        padding: 0;
+    }
+
+        .bootstrap-attachment .modal-body .figure {
+            width: calc(33% - 6px);
+            margin: 3px;
+        }
+
+            .bootstrap-attachment .modal-body .figure .btn {
+                padding: 0;
+                overflow: hidden;
+            }
+
+            .bootstrap-attachment .modal-body .figure .figure-img {
+                margin-bottom: 0;
+                line-height: 1;
+            }
+
+            .bootstrap-attachment .modal-body .figure .figure-caption {
+                font-size: 12px;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+
+        .bootstrap-attachment .modal-body .figure-fileitem .figure-img {
+            width: 100%;
+        }
+/*
+ * bootstrap-upload
+ *==============================================*/
+.bootstrap-upload {
+}
+
+    .bootstrap-upload .modal-header .header-tools-btn {
+        margin-left: .125rem;
+        padding: .125rem .3125rem;
+        font-size: .875rem;
+    }
+
+    .bootstrap-upload .modal-title {
+        font-size: 1rem;
+    }
+
+    .bootstrap-upload .modal-body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .bootstrap-upload .btns .webuploader-pick,
+    .bootstrap-upload .btns .uploadBtn,
+    .bootstrap-upload .btns .uploadBtn.state-uploading,
+    .bootstrap-upload .btns .uploadBtn.state-paused {
+        height: unset;
+        padding: .25rem .5rem;
+        margin: 0 .25rem;
+        font-size: .875rem;
+        line-height: 1.5;
+        border-radius: .2rem;
+    }
+
+        .bootstrap-upload .btns .uploadBtn,
+        .bootstrap-upload .btns .uploadBtn.state-uploading,
+        .bootstrap-upload .btns .uploadBtn.state-paused {
+            margin-right: .5rem;
+        }
+
+    /*屏蔽bootstrap的p自带样式*/
+    .bootstrap-upload p {
+        margin-bottom: 0;
+    }
+    /*屏蔽bootstrap的progress样式*/
+    .bootstrap-upload .progress {
+        display: unset;
+        font-size: .75rem;
+        background-color: unset;
+        border-radius: unset;
+        margin-left: 4px !important;
+        margin-right: 4px !important;
+    }
+
+    .bootstrap-upload .guitea-thumbnail {
+        background-repeat: no-repeat;
+    }
+
+        .bootstrap-upload .guitea-thumbnail .guitea-thumbnail-text {
+            width: 100%;
+            color: #666;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            font-size: 12px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+
+    .bootstrap-upload .imgWrap {
+        line-height: unset !important;
+    }
+
+        .bootstrap-upload .imgWrap img {
+            vertical-align: top;
+        }
+
+#uploader {
+    position: relative;
+}
+
+    #uploader .placeholder {
+        border: none !important;
+        font-size: 1rem !important;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    #uploader .filelist li {
+        margin: 4px !important;
+    }
+
+/*
+ * bootstrap-dialog
+ *==============================================*/
+.bootstrap-dialog {
+}
+
+    .bootstrap-dialog .modal-header .header-tools-btn {
+        margin-left: .125rem;
+        padding: .125rem .3125rem;
+        font-size: .875rem;
+    }
+
+    .bootstrap-dialog .modal-title {
+        font-size: 1rem;
+    }
+
+    .bootstrap-dialog .modal-body {
+        margin: 0;
+        padding: 0;
+    }
+
+/*
+ * bootstrap-operate
+ *==============================================*/
+.bootstrap-operate {
+}
+
+    .bootstrap-operate .modal-content {
+        background-color: #000;
+    }
+
+/*
+ * bootstrap-imgview
+ *==============================================*/
+.bootstrap-imgview {
+}
+
+    .bootstrap-imgview .modal-body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .bootstrap-imgview .modal-footer {
+        padding: .125rem;
+    }
+
+@media screen and (max-width:360px) {
+    .guitea-content {
+        margin-top: 43px;
+    }
+
+    .guitea-header-navbar .navbar-brand {
+        font-size: 1rem;
+    }
+
+    .guitea-header-navbar .navbar-logo {
+        width: 5.638rem;
+        height: 2rem;
+        background-size: 5.638rem 2rem;
+    }
+
+    .guitea-header-navbar .nav-link {
+        padding: .25rem .75rem;
+    }
+
+    .guitea-header-title {
+        width: 150px;
+    }
+}
+
+.canvasjs-chart-container .canvasjs-chart-credit {
+    display: none !important;
+}
